@@ -8,9 +8,11 @@ def register(request):
         form = UserRegisterForm(request.POST) #Change UserCreationForm with UserRegisterForm
         if form.is_valid():
             form.save()
-            username = form.cleaned_data.get('username')
-            messages.success(request, f'Account created for { username } !')
-            return redirect('Blog-Homepage')
+            #username = form.cleaned_data.get('username')
+            messages.success(request, f'Your account has been created, you are now be able to log in')
+            return redirect('login')
+        elif not form.is_valid():
+            messages.success(request, f'Account failed to create !!!')
 
     else:
         form = UserRegisterForm()

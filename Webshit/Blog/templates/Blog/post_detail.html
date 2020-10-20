@@ -1,5 +1,6 @@
 {% extends "Blog/base.html" %}
 {% block content %}
+  <div class="article-content">
     <article class="media content-section">
       <div class="media-body">
         <div class="article-metadata">
@@ -10,4 +11,6 @@
         <p class="article-content">{{ object.content }}</p>
       </div>
     </article>
+  </div>
+  <a href="delete" class="btn btn-danger">Delete Post</a>
 {% endblock content %}

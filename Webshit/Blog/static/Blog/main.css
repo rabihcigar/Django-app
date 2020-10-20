@@ -24,3 +24,7 @@
     display: block;
     margin: 30px;
 }
+
+.article-content {
+    width: 80%;
+}

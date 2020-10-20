@@ -1,0 +1,26 @@
+.operplow{
+    height: 200px;
+    overflow: hidden;
+}
+
+.container-right{
+    position: absolute;
+    right: 5%;
+}
+
+.profile-image {
+    display: block;
+    height: 100px;
+    width: 100px;
+}
+
+.profile-img {
+    display: block;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.Home-ctnr {
+    display: block;
+    margin: 30px;
+}

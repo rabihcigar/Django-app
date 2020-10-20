@@ -1,1 +1,1 @@
-web: gunicorn Webshit.wsgi
+web: gunicorn Django_app.wsgi
